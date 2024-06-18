@@ -76,7 +76,7 @@ public class SecurityConfig {
                 .requestMatchers("/").permitAll()
                 .requestMatchers("/eureka/**").permitAll()
                 .anyRequest().authenticated());
-//                .anyRequest().permitAll()); // 임시로 권한 풀기 함수
+//                .anyRequest().permitAll()); // 권한해제
         http.addFilterBefore(tokenBucketFilter(), UsernamePasswordAuthenticationFilter.class);
         http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
         return http.build();
