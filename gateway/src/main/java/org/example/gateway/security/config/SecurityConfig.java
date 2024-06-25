@@ -67,16 +67,16 @@ public class SecurityConfig {
 
         http.authorizeHttpRequests(req -> req
                 .dispatcherTypeMatchers(DispatcherType.FORWARD).permitAll()
-                .requestMatchers("/api/admin/**").hasAuthority("AT01")
-                .requestMatchers("/api/member/**").hasAnyAuthority("AT01", "AT02")
-                .requestMatchers("/api/auth/**").permitAll()
-                .requestMatchers("/api/product/**").permitAll()
-                .requestMatchers("/api/connect/**").permitAll()
-                .requestMatchers("/chat/**").permitAll()
-                .requestMatchers("/").permitAll()
-                .requestMatchers("/eureka/**").permitAll()
-                .anyRequest().authenticated());
-//                .anyRequest().permitAll()); // 임시로 권한 풀기 함수
+//                .requestMatchers("/api/admin/**").hasAuthority("AT01")
+//                .requestMatchers("/api/member/**").hasAnyAuthority("AT01", "AT02")
+//                .requestMatchers("/api/auth/**").permitAll()
+//                .requestMatchers("/api/product/**").permitAll()
+//                .requestMatchers("/api/connect/**").permitAll()
+//                .requestMatchers("/chat/**").permitAll()
+//                .requestMatchers("/").permitAll()
+//                .requestMatchers("/eureka/**").permitAll()
+//                .anyRequest().authenticated());
+                .anyRequest().permitAll()); // 임시로 권한 풀기 함수
         http.addFilterBefore(tokenBucketFilter(), UsernamePasswordAuthenticationFilter.class);
         http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
         return http.build();
