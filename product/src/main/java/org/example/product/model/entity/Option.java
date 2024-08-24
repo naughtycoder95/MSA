@@ -2,11 +2,11 @@ package org.example.product.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.example.product.model.common.BaseTimeEntity2;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.Where;
+import org.example.product.model.common.BaseTimeEntity2;
 
 /**
  * packageName : org.example.backend.model.entity

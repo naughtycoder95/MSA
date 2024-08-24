@@ -11,17 +11,17 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * packageName : org.example.product.model.common
+ * packageName : org.example.security.model.common
  * fileName : BaseTimeEntity2
  * author : kimtaewan
- * date : 2024-06-19
+ * date : 2024-04-18
  * description :
  * 요약 :
  * <p>
  * ===========================================================
  * DATE            AUTHOR             NOTE
  * -----------------------------------------------------------
- * 2024-06-19         kimtaewan          최초 생성
+ * 2024-04-18         kimtaewan          최초 생성
  */
 @Getter
 @MappedSuperclass

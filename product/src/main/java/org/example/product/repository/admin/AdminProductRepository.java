@@ -1,8 +1,15 @@
-package org.example.product.repository;
+package org.example.product.repository.admin;
 
+import org.example.product.model.dto.AdminProductDto;
 import org.example.product.model.entity.Product;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * packageName : org.example.product.repository.admin
