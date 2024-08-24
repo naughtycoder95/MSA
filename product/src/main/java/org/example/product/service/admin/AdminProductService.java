@@ -1,9 +1,12 @@
-package org.example.product.service;
+package org.example.product.service.admin;
 
+import org.example.product.model.dto.AdminProductDto;
 import org.example.product.model.entity.Product;
-import org.example.product.repository.AdminProductRepository;
+import org.example.product.repository.admin.AdminProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * packageName : org.example.product.service.admin
